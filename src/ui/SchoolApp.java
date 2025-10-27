@@ -24,6 +24,7 @@ public class SchoolApp {
 
     }
 
+    
     public SchoolApp() {
         input = new Scanner(System.in);
         schoolController = new SchoolController();
