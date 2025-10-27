@@ -1,5 +1,6 @@
 package model;
 import java.util.ArrayList;
+import java.time.LocalDate;
 
 public class Computer {
     private String serialNumber;
@@ -18,7 +19,14 @@ public class Computer {
     }
 
     public void addIncident(LocalDate Hora, String Descripcion) {
-        incidents.add(new Incident())
+        incidents.add(new Incident(Hora, Descripcion));
     }
 
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public ArrayList<Incident> getIncidents() {
+        return incidents;
+    }
 }
